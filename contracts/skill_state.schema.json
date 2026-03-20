@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "skill_state.schema.json",
+  "title": "SkillStateResponse",
+  "type": "object",
+  "required": ["state"],
+  "properties": {
+    "state": {
+      "type": ["object", "null"],
+      "properties": {
+        "run_id": {"type": "string"},
+        "session_id": {"type": "string"},
+        "trace_id": {"type": "string"},
+        "intent_id": {"type": "string"},
+        "skill_name": {"type": "string"},
+        "state": {"type": "string"},
+        "first_response_ms": {"type": ["integer", "null"]}
+      }
+    }
+  }
+}

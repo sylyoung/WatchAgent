@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "codex_decision.schema.json",
+  "title": "ApprovalDecisionRequest",
+  "type": "object",
+  "required": ["session_id", "approval_id", "decision"],
+  "properties": {
+    "session_id": {"type": "string"},
+    "approval_id": {"type": "string"},
+    "decision": {"type": "string", "enum": ["approve", "reject"]},
+    "followup_text": {"type": ["string", "null"]},
+    "input_mode": {"type": "string", "enum": ["voice", "gesture", "tap"]}
+  }
+}

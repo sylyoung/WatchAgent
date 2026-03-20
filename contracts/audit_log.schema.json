@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "audit_log.schema.json",
+  "title": "AuditLogEntry",
+  "type": "object",
+  "required": ["log_id", "who", "when", "what", "result", "mode"],
+  "properties": {
+    "log_id": {"type": "string"},
+    "who": {"type": "string"},
+    "when": {"type": "string", "format": "date-time"},
+    "what": {"type": "string"},
+    "why": {"type": ["string", "null"]},
+    "result": {"type": "string"},
+    "mode": {"type": "string", "enum": ["demo", "live"]},
+    "confirm_token": {"type": ["string", "null"]},
+    "openclaw_session_id": {"type": ["string", "null"]},
+    "metadata": {"type": "object"}
+  }
+}

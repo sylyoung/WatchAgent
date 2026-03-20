@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "watch_confirm.schema.json",
+  "title": "WatchConfirmRequest",
+  "type": "object",
+  "required": ["session_id", "confirm_token", "decision", "timestamp"],
+  "properties": {
+    "session_id": {"type": "string"},
+    "confirm_token": {"type": "string"},
+    "decision": {"type": "string", "enum": ["approve", "reject"]},
+    "input_mode": {"type": "string", "enum": ["voice", "gesture", "tap"]},
+    "followup_text": {"type": ["string", "null"]},
+    "timestamp": {"type": "string", "format": "date-time"}
+  }
+}

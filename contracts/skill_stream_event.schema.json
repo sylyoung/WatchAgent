@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "skill_stream_event.schema.json",
+  "title": "SkillStreamEvent",
+  "type": "object",
+  "required": ["event_id", "session_id", "run_id", "trace_id", "event_type", "step", "created_at"],
+  "properties": {
+    "event_id": {"type": "integer"},
+    "session_id": {"type": "string"},
+    "run_id": {"type": "string"},
+    "trace_id": {"type": "string"},
+    "event_type": {"type": "string"},
+    "step": {"type": "string"},
+    "payload": {"type": "object"},
+    "created_at": {"type": "string", "format": "date-time"}
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "codex_queue.schema.json",
+  "title": "CodexQueueResponse",
+  "type": "object",
+  "required": ["items"],
+  "properties": {
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["approval_id", "title", "question", "openclaw_session_id", "acp_thread_id", "status"],
+        "properties": {
+          "approval_id": {"type": "string"},
+          "title": {"type": "string"},
+          "question": {"type": "string"},
+          "suggested_action": {"type": ["string", "null"]},
+          "openclaw_session_id": {"type": "string"},
+          "acp_thread_id": {"type": "string"},
+          "status": {"type": "string", "enum": ["pending", "approved", "rejected"]},
+          "priority": {"type": "integer"},
+          "created_at": {"type": "string", "format": "date-time"},
+          "updated_at": {"type": "string", "format": "date-time"}
+        }
+      }
+    }
+  }
+}

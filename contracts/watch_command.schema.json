@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "watch_command.schema.json",
+  "title": "WatchCommandRequest",
+  "type": "object",
+  "required": ["session_id", "utterance", "timestamp"],
+  "properties": {
+    "session_id": {"type": "string"},
+    "utterance": {"type": "string"},
+    "skill_hint": {"type": ["string", "null"]},
+    "input_mode": {"type": "string", "enum": ["voice", "gesture", "tap"]},
+    "entry_mode": {"type": "string", "enum": ["complication", "siri", "tap"]},
+    "intent_id": {"type": ["string", "null"]},
+    "trace_id": {"type": "string"},
+    "timestamp": {"type": "string", "format": "date-time"},
+    "device_context": {
+      "type": "object",
+      "properties": {
+        "watch_model": {"type": ["string", "null"]},
+        "locale": {"type": ["string", "null"]},
+        "timezone": {"type": ["string", "null"]},
+        "battery_level": {"type": ["number", "null"], "minimum": 0, "maximum": 100},
+        "connectivity": {"type": ["string", "null"]}
+      }
+    }
+  }
+}

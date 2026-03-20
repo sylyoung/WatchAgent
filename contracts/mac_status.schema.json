@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mac_status.schema.json",
+  "title": "MacStatusBatch",
+  "type": "object",
+  "required": ["reporter_id", "tasks", "timestamp"],
+  "properties": {
+    "reporter_id": {"type": "string"},
+    "timestamp": {"type": "string", "format": "date-time"},
+    "tasks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["task_id", "task_title", "state", "progress", "last_update"],
+        "properties": {
+          "task_id": {"type": "string"},
+          "task_title": {"type": "string"},
+          "state": {"type": "string", "enum": ["running", "blocked", "done"]},
+          "progress": {"type": "number", "minimum": 0, "maximum": 100},
+          "last_update": {"type": "string", "format": "date-time"},
+          "action_needed": {"type": ["string", "null"]},
+          "blocked_reason": {"type": ["string", "null"]},
+          "source": {"type": "string"}
+        }
+      }
+    }
+  }
+}

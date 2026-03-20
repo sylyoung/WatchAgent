@@ -1,0 +1,654 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01C9A412599F7913BF1EBC12 /* SpeechController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A6CF14B1819A42C4B419AA /* SpeechController.swift */; };
+		1AF01F440D7E655F7A9F3475 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D39EE1BEC14CEE2CE82585B /* Assets.xcassets */; };
+		29A71DFCD069AE24B8137128 /* WeatherDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39B5F036307FB9346E2DC7B /* WeatherDataProvider.swift */; };
+		2CF6D288F386FF18256D18FD /* ContractModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1310BA7387B8F59CF54EE1F /* ContractModels.swift */; };
+		3A10EF5DB05C43A4BA88A16C /* BridgeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9089B83519DDAEE31B086D07 /* BridgeViewModel.swift */; };
+		47522DAFCA2A26F75F46B1B3 /* WatchAgentShortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC25292E92BD11043350442 /* WatchAgentShortcuts.swift */; };
+		60DA8F7DBADE8E3C1DC87E94 /* WatchAgentAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D69194454C37A3ECEA222C /* WatchAgentAPIClient.swift */; };
+		70737C20327CE17ABBE06086 /* WatchAgentComplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277B4D33234796F66AD09736 /* WatchAgentComplication.swift */; };
+		71CE2BEFAFC9A9449415913E /* WCRelayManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DE0458CDA43F9BA8EB9F5C /* WCRelayManager.swift */; };
+		71CF85E88F78EF74A0BC4B4D /* WatchRelayClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD0C8FFE55A6D3428C9B8F5 /* WatchRelayClient.swift */; };
+		7A305F67AAD3406C5BB2B5F1 /* SessionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E92BA0D6C2B9B12D6F9B521 /* SessionViewModel.swift */; };
+		9E379B6B7003DC0A84FF89A5 /* WatchAgentAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D69194454C37A3ECEA222C /* WatchAgentAPIClient.swift */; };
+		A260E8D7968740E3F9B7B30A /* WatchAgentWatchApp.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = FD9AB69D5D51FABB951D059C /* WatchAgentWatchApp.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AA8D6678BD1FCA3BABE63005 /* WatchAgentWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF859CF73E73286E1FE92D4 /* WatchAgentWatchApp.swift */; };
+		B40ED5810F62F31543CE7C69 /* ContractModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1310BA7387B8F59CF54EE1F /* ContractModels.swift */; };
+		C1EF4449A720D9B22B8B774E /* PhoneBridgeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D983F050B0559C7155E80B /* PhoneBridgeApp.swift */; };
+		C510E0DE1737A05342063571 /* HealthDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFD17E5600A76AAA0825025 /* HealthDataProvider.swift */; };
+		C6C47F40585966EE3CB9400B /* VoiceSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC8E00AA82E4DCDE444E309 /* VoiceSettings.swift */; };
+		CD04B5A790C421B337A52D2D /* VoiceSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD033BBB239A74534215247C /* VoiceSettingsView.swift */; };
+		E03FB133C028B82AC28ADC69 /* QuickSkill.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A4C2901D312B8BCF04B70B /* QuickSkill.swift */; };
+		EB97F9895C2CC0BF1CCEC1B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3298FCF2C2E6B6B07AB5F0E /* Assets.xcassets */; };
+		F2F4635E957DD54D9878EEEE /* VoicePromptEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D770C5C2619867B6E1B29E2B /* VoicePromptEngine.swift */; };
+		FE3809A23EA228515A28B94D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481266029826CC09D1A750BB /* ContentView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E5862FFCAA66F4A3D03DFADC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41E531786A9A0654EE9F015A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 640438D69EF5929FD45680F4;
+			remoteInfo = WatchAgentWatchApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		521DA5E4D673A8A13CB420DC /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				A260E8D7968740E3F9B7B30A /* WatchAgentWatchApp.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		07D983F050B0559C7155E80B /* PhoneBridgeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneBridgeApp.swift; sourceTree = "<group>"; };
+		159BC02A3F7641A209C7D9B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		277B4D33234796F66AD09736 /* WatchAgentComplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchAgentComplication.swift; sourceTree = "<group>"; };
+		2BC25292E92BD11043350442 /* WatchAgentShortcuts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchAgentShortcuts.swift; sourceTree = "<group>"; };
+		3E92BA0D6C2B9B12D6F9B521 /* SessionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionViewModel.swift; sourceTree = "<group>"; };
+		481266029826CC09D1A750BB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4EFD17E5600A76AAA0825025 /* HealthDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDataProvider.swift; sourceTree = "<group>"; };
+		5FC8E00AA82E4DCDE444E309 /* VoiceSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceSettings.swift; sourceTree = "<group>"; };
+		7CEC49628E7797EA87B46407 /* WatchAgentPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchAgentPhone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		88D69194454C37A3ECEA222C /* WatchAgentAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchAgentAPIClient.swift; sourceTree = "<group>"; };
+		8D39EE1BEC14CEE2CE82585B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9089B83519DDAEE31B086D07 /* BridgeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeViewModel.swift; sourceTree = "<group>"; };
+		A1A4C2901D312B8BCF04B70B /* QuickSkill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSkill.swift; sourceTree = "<group>"; };
+		A39B5F036307FB9346E2DC7B /* WeatherDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDataProvider.swift; sourceTree = "<group>"; };
+		A3DE0458CDA43F9BA8EB9F5C /* WCRelayManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WCRelayManager.swift; sourceTree = "<group>"; };
+		B3A6CF14B1819A42C4B419AA /* SpeechController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechController.swift; sourceTree = "<group>"; };
+		CCD0C8FFE55A6D3428C9B8F5 /* WatchRelayClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchRelayClient.swift; sourceTree = "<group>"; };
+		D770C5C2619867B6E1B29E2B /* VoicePromptEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoicePromptEngine.swift; sourceTree = "<group>"; };
+		DD033BBB239A74534215247C /* VoiceSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceSettingsView.swift; sourceTree = "<group>"; };
+		E3298FCF2C2E6B6B07AB5F0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EAF859CF73E73286E1FE92D4 /* WatchAgentWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchAgentWatchApp.swift; sourceTree = "<group>"; };
+		F1310BA7387B8F59CF54EE1F /* ContractModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractModels.swift; sourceTree = "<group>"; };
+		F2B6DBA29DFFE6C41477F48C /* WatchAgentWatchApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WatchAgentWatchApp.entitlements; sourceTree = "<group>"; };
+		FD9AB69D5D51FABB951D059C /* WatchAgentWatchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchAgentWatchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		457E5249722563BF893228EF /* apple */ = {
+			isa = PBXGroup;
+			children = (
+				9C1DB5682068737519FE853B /* PhoneBridgeApp */,
+				DBAD66762354B1E21F3D1404 /* WatchAgentShared */,
+				F1EEE393761610B3CA3E0994 /* WatchAgentWatchApp */,
+			);
+			path = apple;
+			sourceTree = "<group>";
+		};
+		4F82728EFD43222A9CEE4F7E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7CEC49628E7797EA87B46407 /* WatchAgentPhone.app */,
+				FD9AB69D5D51FABB951D059C /* WatchAgentWatchApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5A0DAF868C0F2EA9FFC95E29 = {
+			isa = PBXGroup;
+			children = (
+				457E5249722563BF893228EF /* apple */,
+				4F82728EFD43222A9CEE4F7E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9C1DB5682068737519FE853B /* PhoneBridgeApp */ = {
+			isa = PBXGroup;
+			children = (
+				E3298FCF2C2E6B6B07AB5F0E /* Assets.xcassets */,
+				9089B83519DDAEE31B086D07 /* BridgeViewModel.swift */,
+				07D983F050B0559C7155E80B /* PhoneBridgeApp.swift */,
+				A3DE0458CDA43F9BA8EB9F5C /* WCRelayManager.swift */,
+			);
+			path = PhoneBridgeApp;
+			sourceTree = "<group>";
+		};
+		DBAD66762354B1E21F3D1404 /* WatchAgentShared */ = {
+			isa = PBXGroup;
+			children = (
+				F1310BA7387B8F59CF54EE1F /* ContractModels.swift */,
+				88D69194454C37A3ECEA222C /* WatchAgentAPIClient.swift */,
+			);
+			path = WatchAgentShared;
+			sourceTree = "<group>";
+		};
+		F1EEE393761610B3CA3E0994 /* WatchAgentWatchApp */ = {
+			isa = PBXGroup;
+			children = (
+				8D39EE1BEC14CEE2CE82585B /* Assets.xcassets */,
+				481266029826CC09D1A750BB /* ContentView.swift */,
+				4EFD17E5600A76AAA0825025 /* HealthDataProvider.swift */,
+				159BC02A3F7641A209C7D9B9 /* Info.plist */,
+				A1A4C2901D312B8BCF04B70B /* QuickSkill.swift */,
+				3E92BA0D6C2B9B12D6F9B521 /* SessionViewModel.swift */,
+				B3A6CF14B1819A42C4B419AA /* SpeechController.swift */,
+				D770C5C2619867B6E1B29E2B /* VoicePromptEngine.swift */,
+				5FC8E00AA82E4DCDE444E309 /* VoiceSettings.swift */,
+				DD033BBB239A74534215247C /* VoiceSettingsView.swift */,
+				277B4D33234796F66AD09736 /* WatchAgentComplication.swift */,
+				2BC25292E92BD11043350442 /* WatchAgentShortcuts.swift */,
+				F2B6DBA29DFFE6C41477F48C /* WatchAgentWatchApp.entitlements */,
+				EAF859CF73E73286E1FE92D4 /* WatchAgentWatchApp.swift */,
+				CCD0C8FFE55A6D3428C9B8F5 /* WatchRelayClient.swift */,
+				A39B5F036307FB9346E2DC7B /* WeatherDataProvider.swift */,
+			);
+			path = WatchAgentWatchApp;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		41A368AE7047264CD95F3819 /* WatchAgentPhone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C44147F43A5298B4EE4049E /* Build configuration list for PBXNativeTarget "WatchAgentPhone" */;
+			buildPhases = (
+				7355054BDBD615D8B588FA87 /* Sources */,
+				EC73C7BF218F794F83C97C43 /* Resources */,
+				521DA5E4D673A8A13CB420DC /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEE8EC652B10D459A9F2A89D /* PBXTargetDependency */,
+			);
+			name = WatchAgentPhone;
+			packageProductDependencies = (
+			);
+			productName = WatchAgentPhone;
+			productReference = 7CEC49628E7797EA87B46407 /* WatchAgentPhone.app */;
+			productType = "com.apple.product-type.application";
+		};
+		640438D69EF5929FD45680F4 /* WatchAgentWatchApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 127D714615BDA53A0F3D1912 /* Build configuration list for PBXNativeTarget "WatchAgentWatchApp" */;
+			buildPhases = (
+				69CDE081E522420F43C20B88 /* Sources */,
+				39460E70E30453CD7690642D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WatchAgentWatchApp;
+			packageProductDependencies = (
+			);
+			productName = WatchAgentWatchApp;
+			productReference = FD9AB69D5D51FABB951D059C /* WatchAgentWatchApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		41E531786A9A0654EE9F015A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+			};
+			buildConfigurationList = 0B634133EA1CE5BE2344D580 /* Build configuration list for PBXProject "WatchAgent" */;
+			developmentRegion = "zh-Hans";
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = 5A0DAF868C0F2EA9FFC95E29;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 4F82728EFD43222A9CEE4F7E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				41A368AE7047264CD95F3819 /* WatchAgentPhone */,
+				640438D69EF5929FD45680F4 /* WatchAgentWatchApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		39460E70E30453CD7690642D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AF01F440D7E655F7A9F3475 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC73C7BF218F794F83C97C43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB97F9895C2CC0BF1CCEC1B2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		69CDE081E522420F43C20B88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE3809A23EA228515A28B94D /* ContentView.swift in Sources */,
+				2CF6D288F386FF18256D18FD /* ContractModels.swift in Sources */,
+				C510E0DE1737A05342063571 /* HealthDataProvider.swift in Sources */,
+				E03FB133C028B82AC28ADC69 /* QuickSkill.swift in Sources */,
+				7A305F67AAD3406C5BB2B5F1 /* SessionViewModel.swift in Sources */,
+				01C9A412599F7913BF1EBC12 /* SpeechController.swift in Sources */,
+				F2F4635E957DD54D9878EEEE /* VoicePromptEngine.swift in Sources */,
+				C6C47F40585966EE3CB9400B /* VoiceSettings.swift in Sources */,
+				CD04B5A790C421B337A52D2D /* VoiceSettingsView.swift in Sources */,
+				60DA8F7DBADE8E3C1DC87E94 /* WatchAgentAPIClient.swift in Sources */,
+				70737C20327CE17ABBE06086 /* WatchAgentComplication.swift in Sources */,
+				47522DAFCA2A26F75F46B1B3 /* WatchAgentShortcuts.swift in Sources */,
+				AA8D6678BD1FCA3BABE63005 /* WatchAgentWatchApp.swift in Sources */,
+				71CF85E88F78EF74A0BC4B4D /* WatchRelayClient.swift in Sources */,
+				29A71DFCD069AE24B8137128 /* WeatherDataProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7355054BDBD615D8B588FA87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A10EF5DB05C43A4BA88A16C /* BridgeViewModel.swift in Sources */,
+				B40ED5810F62F31543CE7C69 /* ContractModels.swift in Sources */,
+				C1EF4449A720D9B22B8B774E /* PhoneBridgeApp.swift in Sources */,
+				71CE2BEFAFC9A9449415913E /* WCRelayManager.swift in Sources */,
+				9E379B6B7003DC0A84FF89A5 /* WatchAgentAPIClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CEE8EC652B10D459A9F2A89D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 640438D69EF5929FD45680F4 /* WatchAgentWatchApp */;
+			targetProxy = E5862FFCAA66F4A3D03DFADC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0BC336CB61C194D0788E2058 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 5.1;
+				WATCHOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Release;
+		};
+		1F8EC2C93F706BE797C792F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = AFF8W3GTH6;
+				INFOPLIST_KEY_CFBundleDisplayName = WatchAgent;
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "WatchAgent需要在局域网连接后端服务用于比赛演示。";
+				INFOPLIST_KEY_NSWifiInfoUsageDescription = "WatchAgent使用Wi-Fi信息优化连接体验。";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.siyangli.watchagent.phone;
+				PRODUCT_NAME = WatchAgentPhone;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		3979B3C3940B4F526588B46B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = apple/WatchAgentWatchApp/WatchAgentWatchApp.entitlements;
+				DEVELOPMENT_TEAM = AFF8W3GTH6;
+				INFOPLIST_FILE = apple/WatchAgentWatchApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WatchAgent;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "WatchAgent需要读取健康数据以提供运动、心率和睡眠分析。";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "WatchAgent需要定位以获取当地天气信息。";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "WatchAgent需要使用麦克风进行语音输入。";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.siyangli.watchagent.phone;
+				PRODUCT_BUNDLE_IDENTIFIER = com.siyangli.watchagent.phone.watchapp;
+				PRODUCT_NAME = WatchAgentWatchApp;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Release;
+		};
+		7BB7E4D91FAC0D2DA585C839 /* DemoRecord */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 5.1;
+				WATCHOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = DemoRecord;
+		};
+		C958DB4592F8CAE1B015631C /* DemoRecord */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = AFF8W3GTH6;
+				INFOPLIST_KEY_CFBundleDisplayName = WatchAgent;
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "WatchAgent需要在局域网连接后端服务用于比赛演示。";
+				INFOPLIST_KEY_NSWifiInfoUsageDescription = "WatchAgent使用Wi-Fi信息优化连接体验。";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.siyangli.watchagent.phone;
+				PRODUCT_NAME = WatchAgentPhone;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = DemoRecord;
+		};
+		C9C6239EC07606D45E80E49A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = AFF8W3GTH6;
+				INFOPLIST_KEY_CFBundleDisplayName = WatchAgent;
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "WatchAgent需要在局域网连接后端服务用于比赛演示。";
+				INFOPLIST_KEY_NSWifiInfoUsageDescription = "WatchAgent使用Wi-Fi信息优化连接体验。";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.siyangli.watchagent.phone;
+				PRODUCT_NAME = WatchAgentPhone;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D18999657C9326C3BCB6541C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 5.1;
+				WATCHOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Debug;
+		};
+		D2745C287D0EA63CD6B4E7D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = apple/WatchAgentWatchApp/WatchAgentWatchApp.entitlements;
+				DEVELOPMENT_TEAM = AFF8W3GTH6;
+				INFOPLIST_FILE = apple/WatchAgentWatchApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WatchAgent;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "WatchAgent需要读取健康数据以提供运动、心率和睡眠分析。";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "WatchAgent需要定位以获取当地天气信息。";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "WatchAgent需要使用麦克风进行语音输入。";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.siyangli.watchagent.phone;
+				PRODUCT_BUNDLE_IDENTIFIER = com.siyangli.watchagent.phone.watchapp;
+				PRODUCT_NAME = WatchAgentWatchApp;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Debug;
+		};
+		DCA4C7E360B74EC844181CF5 /* DemoRecord */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = apple/WatchAgentWatchApp/WatchAgentWatchApp.entitlements;
+				DEVELOPMENT_TEAM = AFF8W3GTH6;
+				INFOPLIST_FILE = apple/WatchAgentWatchApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WatchAgent;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "WatchAgent需要读取健康数据以提供运动、心率和睡眠分析。";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "WatchAgent需要定位以获取当地天气信息。";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "WatchAgent需要使用麦克风进行语音输入。";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.siyangli.watchagent.phone;
+				PRODUCT_BUNDLE_IDENTIFIER = com.siyangli.watchagent.phone.watchapp;
+				PRODUCT_NAME = WatchAgentWatchApp;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = DemoRecord;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0B634133EA1CE5BE2344D580 /* Build configuration list for PBXProject "WatchAgent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D18999657C9326C3BCB6541C /* Debug */,
+				7BB7E4D91FAC0D2DA585C839 /* DemoRecord */,
+				0BC336CB61C194D0788E2058 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		0C44147F43A5298B4EE4049E /* Build configuration list for PBXNativeTarget "WatchAgentPhone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9C6239EC07606D45E80E49A /* Debug */,
+				C958DB4592F8CAE1B015631C /* DemoRecord */,
+				1F8EC2C93F706BE797C792F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		127D714615BDA53A0F3D1912 /* Build configuration list for PBXNativeTarget "WatchAgentWatchApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2745C287D0EA63CD6B4E7D4 /* Debug */,
+				DCA4C7E360B74EC844181CF5 /* DemoRecord */,
+				3979B3C3940B4F526588B46B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 41E531786A9A0654EE9F015A /* Project object */;
+}

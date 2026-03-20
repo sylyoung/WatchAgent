@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "watch_reply.schema.json",
+  "title": "WatchReply",
+  "type": "object",
+  "required": ["request_id", "session_id", "speech_text", "cards", "created_at"],
+  "properties": {
+    "request_id": {"type": "string"},
+    "session_id": {"type": "string"},
+    "speech_text": {"type": "string"},
+    "cards": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["card_id", "title", "detail", "action_type", "requires_confirmation"],
+        "properties": {
+          "card_id": {"type": "string"},
+          "title": {"type": "string"},
+          "detail": {"type": "string"},
+          "action_type": {"type": "string"},
+          "action_payload": {"type": "object"},
+          "requires_confirmation": {"type": "boolean"},
+          "execution_mode": {"type": "string", "enum": ["demo", "live"]},
+          "priority": {"type": "integer", "minimum": 0, "maximum": 3},
+          "confirm_token": {"type": ["string", "null"]},
+          "cta_approve": {"type": "string"},
+          "cta_reject": {"type": "string"},
+          "primary_action": {"type": "string"},
+          "reject_mode": {"type": "string"}
+        }
+      }
+    },
+    "requires_confirmation": {"type": "boolean"},
+    "confirm_token": {"type": ["string", "null"]},
+    "priority": {"type": "integer", "minimum": 0, "maximum": 3},
+    "created_at": {"type": "string", "format": "date-time"},
+    "debug": {
+      "type": "object",
+      "properties": {
+        "skill_run_id": {"type": ["string", "null"]},
+        "trace_id": {"type": ["string", "null"]},
+        "intent_id": {"type": ["string", "null"]},
+        "stream_path": {"type": ["string", "null"]},
+        "first_response_ms": {"type": ["integer", "null"]},
+        "entry_mode": {"type": ["string", "null"]}
+      }
+    }
+  }
+}

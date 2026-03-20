@@ -1,0 +1,43 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+.pytest_cache/
+*.pyc
+
+# Xcode / Swift
+DerivedData/
+*.xcresult
+xcuserdata/
+*.xcuserstate
+*.xcworkspace/xcuserdata/
+
+# Secrets
+.env
+backend/.env
+
+# Local runtime artifacts
+*.log
+*.db
+
+# Internal planning docs
+PLAN.md
+PLANv2.md
+PLANv3.md
+GITHUB_UPLOAD_CHECKLIST.md
+gen_docx.js
+
+# Build artifacts
+build/
+
+# Large media / competition assets (not needed to reproduce the app)
+*.pdf
+*.png
+*.mp4
+*.MP4
+*.docx
+转转/
+截图/
+WatchAPPDemo/
+~$*

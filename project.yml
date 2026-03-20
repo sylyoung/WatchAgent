@@ -1,0 +1,87 @@
+name: WatchAgent
+options:
+  deploymentTarget:
+    iOS: 18.0
+    watchOS: 11.0
+  developmentLanguage: zh-Hans
+  createIntermediateGroups: true
+settings:
+  base:
+    SWIFT_VERSION: 5.10
+    SWIFT_STRICT_CONCURRENCY: minimal
+    MARKETING_VERSION: 0.1.0
+    CURRENT_PROJECT_VERSION: 1
+    GENERATE_INFOPLIST_FILE: YES
+    INFOPLIST_KEY_UILaunchScreen_Generation: YES
+    INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents: YES
+configs:
+  Debug: debug
+  DemoRecord: debug
+  Release: release
+packages: {}
+
+targets:
+  WatchAgentPhone:
+    type: application
+    platform: iOS
+    deploymentTarget: 18.0
+    sources:
+      - path: apple/PhoneBridgeApp
+      - path: apple/WatchAgentShared
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.siyangli.watchagent.phone
+        PRODUCT_NAME: WatchAgentPhone
+        TARGETED_DEVICE_FAMILY: 1
+        INFOPLIST_KEY_CFBundleDisplayName: WatchAgent
+        INFOPLIST_KEY_NSLocalNetworkUsageDescription: "WatchAgent\u9700\u8981\u5728\u5C40\u57DF\u7F51\u8FDE\u63A5\u540E\u7AEF\u670D\u52A1\u3002"
+        INFOPLIST_KEY_NSWifiInfoUsageDescription: "WatchAgent\u4F7F\u7528Wi-Fi\u4FE1\u606F\u4F18\u5316\u8FDE\u63A5\u4F53\u9A8C\u3002"
+    dependencies:
+      - target: WatchAgentWatchApp
+
+  WatchAgentWatchApp:
+    type: application
+    platform: watchOS
+    deploymentTarget: 11.0
+    sources:
+      - path: apple/WatchAgentWatchApp
+      - path: apple/WatchAgentShared
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.siyangli.watchagent.phone.watchapp
+        PRODUCT_NAME: WatchAgentWatchApp
+        INFOPLIST_KEY_CFBundleDisplayName: WatchAgent
+        INFOPLIST_KEY_NSMicrophoneUsageDescription: "WatchAgent\u9700\u8981\u4F7F\u7528\u9EA6\u514B\u98CE\u8FDB\u884C\u8BED\u97F3\u8F93\u5165\u3002"
+        INFOPLIST_KEY_WKCompanionAppBundleIdentifier: com.siyangli.watchagent.phone
+        INFOPLIST_KEY_NSHealthShareUsageDescription: "WatchAgent\u9700\u8981\u8BFB\u53D6\u5065\u5EB7\u6570\u636E\u4EE5\u63D0\u4F9B\u8FD0\u52A8\u3001\u5FC3\u7387\u548C\u7761\u7720\u5206\u6790\u3002"
+        INFOPLIST_KEY_NSLocationWhenInUseUsageDescription: "WatchAgent\u9700\u8981\u5B9A\u4F4D\u4EE5\u83B7\u53D6\u5F53\u5730\u5929\u6C14\u4FE1\u606F\u3002"
+    entitlements:
+      path: apple/WatchAgentWatchApp/WatchAgentWatchApp.entitlements
+      properties:
+        com.apple.developer.healthkit: true
+    info:
+      path: apple/WatchAgentWatchApp/Info.plist
+      properties:
+        NSAppTransportSecurity:
+          NSAllowsLocalNetworking: true
+          NSAllowsArbitraryLoads: true
+        NSHealthShareUsageDescription: "WatchAgent\u9700\u8981\u8BFB\u53D6\u5065\u5EB7\u6570\u636E\u4EE5\u63D0\u4F9B\u8FD0\u52A8\u3001\u5FC3\u7387\u548C\u7761\u7720\u5206\u6790\u3002"
+        NSLocationWhenInUseUsageDescription: "WatchAgent\u9700\u8981\u5B9A\u4F4D\u4EE5\u83B7\u53D6\u5F53\u5730\u5929\u6C14\u4FE1\u606F\u3002"
+        NSSpeechRecognitionUsageDescription: "WatchAgent\u9700\u8981\u8BED\u97F3\u8BC6\u522B\u4EE5\u5C06\u60A8\u7684\u8BED\u97F3\u6307\u4EE4\u8F6C\u4E3A\u6587\u5B57\u3002"
+
+schemes:
+  WatchAgent:
+    build:
+      targets:
+        WatchAgentPhone: all
+        WatchAgentWatchApp: all
+    run:
+      config: Debug
+    test:
+      config: Debug
+    profile:
+      config: Release
+    analyze:
+      config: Debug
+    archive:
+      config: Release

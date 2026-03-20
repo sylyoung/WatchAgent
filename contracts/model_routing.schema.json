@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "model_routing.schema.json",
+  "title": "ModelRoutingConfig",
+  "type": "object",
+  "required": ["primary_model", "escalation_model", "timeout_ms", "max_parallel_subagents"],
+  "properties": {
+    "primary_model": {"type": "string"},
+    "escalation_model": {"type": "string"},
+    "timeout_ms": {"type": "integer"},
+    "max_parallel_subagents": {"type": "integer"}
+  }
+}
